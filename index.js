@@ -11,7 +11,7 @@ app.use("/", router);
 
 router.get("/", (req, res) => {
     console.log(path);
-    res.sendFile(`${path}/web-client/index.html`);
+    res.sendFile(`${path}/web-client/ex_css_3.html`);
 });
 
 router.get("/app.js", (req, res) => {
