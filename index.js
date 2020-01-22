@@ -11,9 +11,12 @@ app.use("/", router);
 
 router.get("/", (req, res) => {
     console.log(path);
-    res.sendFile(`${path}/web-client/ex_html2.html`);
+    res.sendFile(`${path}/web-client/`);
 });
-
+router.get("/index.html", (req, res) => {
+    console.log(path);
+    res.sendFile(`${path}/web-client/index.html`);
+});
 router.get("/app.js", (req, res) => {
     res.sendFile(`${path}/web-client/app.js`);
 });
